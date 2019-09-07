@@ -9,6 +9,7 @@ app.use(body_parser.urlencoded({extended:true}))
 
 app.get("/hello",(req,res)=>res.send("Hi, This is sample page in Google Cloud."));
 
-app.listen(9000,()=>{
+const PORT = process.env.PORT || 8080;
+app.listen(PORT,()=>{
     console.log("Quiz Server is started...")
 })
