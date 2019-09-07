@@ -1,0 +1,11 @@
+
+# To deploy on app-engine, need to have adquate permission on service acccount as well as enable appengine.googleapis.com
+
+# add roles to service acccount
+    App Engine Admin
+    App Engine Deployer
+    Cloud Build Service Account
+    Cloud Build Editor
+    Storage Admin
+# enbale api as 
+    gcloud services enable appengine.googleapis.com
