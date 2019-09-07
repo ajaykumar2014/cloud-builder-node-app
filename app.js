@@ -7,7 +7,7 @@ var app = express();
 app.use(body_parser.json())
 app.use(body_parser.urlencoded({extended:true}))
 
-app.get("/hello",(req,res)=>res.send("Hi, This is sample page in Google Cloud."));
+app.get("/hello",(req,res)=>res.send("Welcome to CI&CD page :) "));
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT,()=>{
