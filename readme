@@ -1,11 +1,13 @@
 
-# To deploy on app-engine, need to have adquate permission on service acccount as well as enable appengine.googleapis.com
+# To deploy on app-engine, need to have adquated permission to service acccount.
+# Add below roles to service acccount through IAM.
 
-# add roles to service acccount
     App Engine Admin
     App Engine Deployer
     Cloud Build Service Account
     Cloud Build Editor
     Storage Admin
-# enbale api as 
+    
+# enbale api either by Service API or gcloud - 
+
     gcloud services enable appengine.googleapis.com
